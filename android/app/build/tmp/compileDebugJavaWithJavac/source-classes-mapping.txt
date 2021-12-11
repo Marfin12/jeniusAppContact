@@ -1,0 +1,14 @@
+com/skilltestapplication/MainActivity.java
+ com.skilltestapplication.MainActivity
+com/skilltestapplication/MainApplication.java
+ com.skilltestapplication.MainApplication
+ com.skilltestapplication.MainApplication$1
+com/skilltestapplication/ReactNativeFlipper.java
+ com.skilltestapplication.ReactNativeFlipper
+ com.skilltestapplication.ReactNativeFlipper$1
+ com.skilltestapplication.ReactNativeFlipper$2
+ com.skilltestapplication.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/skilltestapplication/BuildConfig.java
+ com.skilltestapplication.BuildConfig
