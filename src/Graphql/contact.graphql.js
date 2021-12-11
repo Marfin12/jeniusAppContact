@@ -1,12 +1,25 @@
 import { gql } from 'apollo-boost';
 
-const GetContact = gql`
-  query contact($id: String!) {
+const GetListContact = gql`
+  query getContactById {
     contact {
       firstName
       lastName
       age
       photo
+      id
+    }
+  }
+`;
+
+const GetContact = gql`
+  query getContactById($id: String!) {
+    contact(id: $id) {
+      firstName
+      lastName
+      age
+      photo
+      id
     }
   }
 `;
@@ -36,6 +49,7 @@ const DeleteContact = gql`
 `;
 
 export {
+  GetListContact,
   GetContact,
   PostContact,
   EditContact,
