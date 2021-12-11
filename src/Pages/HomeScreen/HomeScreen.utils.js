@@ -1,5 +1,16 @@
-const navigateToDetailScreen = (navigation, props) => () => {
-  navigation.navigate('Details', { props });
+import Constants from '../../Constants';
+
+const { SCREEN: { PROFILE, EDIT } } = Constants;
+
+const navigateToProfileScreen = (navigation, props) => () => {
+  navigation.navigate(PROFILE.ROUTE_NAME, { props });
+};
+
+const navigateToInputScreen = (props) => () => {
+  props.navigation.navigate(EDIT.ROUTE_NAME, {
+    props,
+    isEdit: false
+  });
 };
 
 const apolloObjectCreator = (sports) => ({
@@ -16,4 +27,4 @@ const apolloMapCreator = () => {
   return queryStore;
 };
 
-export { navigateToDetailScreen, apolloObjectCreator, apolloMapCreator };
+export { navigateToProfileScreen, apolloObjectCreator, apolloMapCreator };

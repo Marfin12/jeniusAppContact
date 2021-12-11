@@ -1,3 +1,3 @@
 export { default as HomeScreen } from './HomeScreen';
-export { default as DetailsScreen } from './DetailsScreen';
-export { default as FavoriteScreen } from './FavoriteScreen';
+export { default as InputScreen } from './InputScreen';
+export { default as ProfileScreen } from './ProfileScreen';

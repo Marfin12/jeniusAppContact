@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { View, Image } from 'react-native';
+import { View } from 'react-native';
 import { graphql, compose } from 'react-apollo';
 
-import { GetContact } from '../../Graphql/contact.graphql';
+import { GetListContact, DeleteContact } from '../../Graphql/contact.graphql';
 
 import Card from '../../Components/Card';
 import ListView from '../../Components/ListView';
@@ -11,7 +11,7 @@ import TextField from '../../Components/TextField';
 // import button
 
 import styles from './HomeScreen.styles';
-import { navigateToDetailScreen } from './HomeScreen.utils';
+import { navigateToProfileScreen, navigateToInputScreen } from './HomeScreen.utils';
 
 export const queryOptions = () => ({
   fetchPolicy: 'network-only',
@@ -21,8 +21,13 @@ export const queryOptions = () => ({
   }
 });
 
+export const mapDeleteMutationToProps = ({ mutate }) => ({
+  deleteContact: ({navigation: {state: {params: { id }}}}) =>
+    mutate({ variables: { input: { id } } })
+});
+
 const _renderFloatButton = (props) => (
-  <Card style={styles.floatButton} onPress={props.navigateToInputScreen(props)}>
+  <Card style={styles.floatButton} onPress={navigateToInputScreen(props)}>
     <TextField textStyle={styles.title}>
       +
     </TextField>
@@ -55,7 +60,7 @@ const HomeScreen = (props) => (
   <View>
     <ListView
       style={styles.listView}
-      item={props.data.sports}
+      item={props.data}
       navigation={props.navigation}
       itemList={renderItem}
       emptyList={renderEmpty}
@@ -66,7 +71,10 @@ const HomeScreen = (props) => (
 );
 
 export default compose(
-  graphql(GetContact, {
+  graphql(GetListContact, {
     options: queryOptions
   }),
+  graphql(DeleteContact, {
+    props: mapDeleteMutationToProps
+  })
 )(HomeScreen);

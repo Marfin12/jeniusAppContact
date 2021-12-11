@@ -1,13 +1,22 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { graphql, compose } from 'react-apollo';
+import { get } from 'lodash';
 
-import { PostContact, EditContact } from '../../Graphql/contact.graphql';
+import { PostContact, EditContact, GetContact } from '../../Graphql/contact.graphql';
 import InputField from '../../Components/InputField';
 import TextField from '../../Components/TextField';
 import Card from '../../Components/Card';
 
 import styles from './InputField.styles';
+
+export const queryOptions = (props) => ({
+  fetchPolicy: 'network-only',
+  notifyOnNetworkStatusChange: true,
+  variables: {
+    id: get(props, 'navigation.state.params.props.data', ''),
+  }
+});
 
 export const mapPostMutationToProps = ({ mutate }) => ({
   postContact: (firstName, lastName, age, photo) =>
@@ -27,11 +36,13 @@ const _mutateContact = (contact, isEdit) => {
 };
 
 const InputScreen = (props) => {
-  const data = props.route.params.props;
-  const [firstName, setFirstName] = React.useState(data.firstName);
-  const [lastName, setLastName] = React.useState(data.lastName);
-  const [age, setAge] = React.useState(data.age);
-  const [photo, setPhoto] = React.useState(data.photo);
+  const { isEdit, data } = props.navigation.state.params;
+  const { firstName, lastName, age, photo } = data;
+
+  const [firstNameText, setFirstName] = React.useState(firstName);
+  const [lastNameText, setLastName] = React.useState(lastName);
+  const [ageText, setAge] = React.useState(age);
+  const [photoText, setPhoto] = React.useState(photo);
   const [contact, setContact] = React.useState({});
 
   React.useEffect(() => {
@@ -46,20 +57,20 @@ const InputScreen = (props) => {
   return (
     <View style={styles.container}>
       <InputField setText={setFirstName}>
-        {firstName}
+        {firstNameText}
       </InputField>
       <InputField setText={setLastName}>
-        {lastName}
+        {lastNameText}
       </InputField>
       <InputField setText={setAge}>
-        {age}
+        {ageText}
        </InputField>
        <InputField setText={setPhoto}>
-        {photo}
+        {photoText}
        </InputField>
-       <Card style={styles.button} onPress={_mutateContact(contact, data.isEdit)}>
+       <Card style={styles.button} onPress={_mutateContact(contact, isEdit)}>
         <TextField textStyle={styles.buttonTitle}>
-          {data.isEdit ? 'Upadate' : 'Post'}
+          {isEdit ? 'Upadate' : 'Save'}
         </TextField>
       </Card>
     </View>
@@ -67,6 +78,9 @@ const InputScreen = (props) => {
 };
 
 export default compose(
+  graphql(GetContact, {
+    options: queryOptions
+  }),
   graphql(PostContact, {
     props: mapPostMutationToProps
   }),
