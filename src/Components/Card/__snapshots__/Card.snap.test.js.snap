@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component Dark Theme renders card component dark mode 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#222",
+      "borderRadius": 5,
+      "elevation": 2,
+      "flex": 1,
+      "flexDirection": "row",
+      "marginBottom": 8,
+      "marginTop": 8,
+      "opacity": 1,
+      "padding": 10,
+    }
+  }
+/>
+`;
+
+exports[`Card Component Default Theme renders card component light mode 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "borderRadius": 5,
+      "elevation": 2,
+      "flex": 1,
+      "flexDirection": "row",
+      "marginBottom": 8,
+      "marginTop": 8,
+      "opacity": 1,
+      "padding": 10,
+    }
+  }
+/>
+`;

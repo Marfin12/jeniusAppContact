@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dark Mode Text Field Component renders text field component with default props 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    numberOfLines={0}
+    style={
+      Array [
+        Object {
+          "color": "#FFF",
+        },
+        Object {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Dark Mode Text Field Component renders text field component with elipsis 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#FFF",
+        },
+        Object {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Light Mode Text Field Component renders text field component with default props 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    numberOfLines={0}
+    style={
+      Array [
+        Object {
+          "color": "#111",
+        },
+        Object {},
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Light Mode Text Field Component renders text field component with elipsis 1`] = `
+<View
+  style={Object {}}
+>
+  <Text
+    numberOfLines={1}
+    style={
+      Array [
+        Object {
+          "color": "#111",
+        },
+        Object {},
+      ]
+    }
+  />
+</View>
+`;

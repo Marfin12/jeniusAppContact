@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 3,
+        "borderColor": "#222",
+      },
+      Object {},
+    ]
+  }
+>
+  <TextField
+    textStyle={
+      Object {
+        "color": "#DDD",
+        "fontSize": 20,
+        "fontWeight": "bold",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 3,
+        "borderColor": "#EEE",
+      },
+      Object {},
+    ]
+  }
+>
+  <TextField
+    textStyle={
+      Object {
+        "color": "#000",
+        "fontSize": 20,
+        "fontWeight": "bold",
+      }
+    }
+  />
+</View>
+`;

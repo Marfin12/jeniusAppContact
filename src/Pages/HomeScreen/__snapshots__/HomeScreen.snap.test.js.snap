@@ -1,0 +1,693 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen Component with failed to fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <TextField
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home Screen Component with failed to fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <TextField
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home Screen Component with loading renders dark mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <TextField
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home Screen Component with loading renders light mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <TextField
+        onLayout={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    data={
+      Array [
+        Object {
+          "description": "This is sport description...",
+          "image": "Some Image",
+          "name": "Sport Example",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Card
+          onPress={[Function]}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "Some Image",
+              }
+            }
+            style={
+              Object {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "marginLeft": 12,
+                "marginTop": -10,
+              }
+            }
+          >
+            <TextField
+              textStyle={
+                Object {
+                  "fontSize": 20,
+                }
+              }
+            >
+              Sport Example
+            </TextField>
+            <TextField
+              numberOfLines={3}
+              style={
+                Object {
+                  "fontSize": 11,
+                  "fontStyle": "italic",
+                  "marginTop": 10,
+                }
+              }
+            >
+              This is sport description...
+            </TextField>
+          </View>
+        </Card>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ListEmptyComponent={
+      <TextField
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }
+        textStyle={
+          Object {
+            "fontSize": 11,
+            "fontStyle": "italic",
+            "marginTop": 10,
+          }
+        }
+      >
+        The list data is empty
+      </TextField>
+    }
+    ListHeaderComponent={
+      <Card>
+        List View Header
+      </Card>
+    }
+    contentContainerStyle={
+      Object {
+        "flexGrow": 1,
+      }
+    }
+    data={
+      Array [
+        Object {
+          "description": "This is sport description...",
+          "image": "Some Image",
+          "name": "Sport Example",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+      >
+        <Card>
+          List View Header
+        </Card>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <Card
+          onPress={[Function]}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "Some Image",
+              }
+            }
+            style={
+              Object {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "column",
+                "justifyContent": "center",
+                "marginLeft": 12,
+                "marginTop": -10,
+              }
+            }
+          >
+            <TextField
+              textStyle={
+                Object {
+                  "fontSize": 20,
+                }
+              }
+            >
+              Sport Example
+            </TextField>
+            <TextField
+              numberOfLines={3}
+              style={
+                Object {
+                  "fontSize": 11,
+                  "fontStyle": "italic",
+                  "marginTop": 10,
+                }
+              }
+            >
+              This is sport description...
+            </TextField>
+          </View>
+        </Card>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
