@@ -7,38 +7,56 @@ import {
   DefaultTheme,
 } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import { Images } from './Assets/Images';
+import HeaderImage from './Components/HeaderImage';
 import * as themeActions from './Redux/Actions/action';
 import Constants from './Constants';
-import { HomeScreen, DetailsScreen, FavoriteScreen } from './Pages';
+import { HomeScreen, InputScreen, ProfileScreen } from './Pages';
 
 // import header image component
 
 const Stack = createNativeStackNavigator();
+const { 
+  SCREEN: { CONTACT, PROFILE, EDIT }
+} = Constants;
 
-const deleteContact = (props) => {
-  props.delete(props.id);
-}
-
-const navigateToInputScreen = (props) => {
-  props.navigate(props);
-}
+const navigateToInputScreen = (props) => () => {
+  props.navigation.navigate(EDIT.ROUTE_NAME, {
+    props,
+    isEdit: true
+  });
+};
 
 const StackScreen = () => (
-  <Stack.Navigator initialRouteName="Home">
-    <Stack.Screen name="Home" component={HomeScreen} />
+  <Stack.Navigator initialRouteName={CONTACT.ROUTE_NAME}>
+    <Stack.Screen 
+      name={CONTACT.ROUTE_NAME} 
+      component={HomeScreen} 
+      options={() => ({
+        title: CONTACT.TITLE
+      })}
+    />
     <Stack.Screen
-      name="Details"
-      component={DetailsScreen}
+      name={PROFILE.ROUTE_NAME}
+      component={ProfileScreen}
+      options={({ route }) => {
+        const { props } = route.params;
+        return ({ 
+          title: PROFILE.TITLE,
+          headerRight: (
+            <View>
+              <HeaderImage {...props} image={Images.delete_icon} onPress={props.deleteContact} />
+              <HeaderImage {...props} image={Images.edit_icon} onPress={navigateToInputScreen} />
+            </View>
+          )
+        })}}
+    />
+    <Stack.Screen
+      name={EDIT.ROUTE_NAME}
+      component={InputScreen}
       options={({ route }) => ({ 
-        title: route.params.props.name,
-        headerRight: (
-          <View>
-            <HeaderImage onPress={deleteContact} />
-            <HeaderImage onPress={navigateToInputScreen} />
-          </View>
-        )
+        title: route.params.props.name
       })}
     />
   </Stack.Navigator>
