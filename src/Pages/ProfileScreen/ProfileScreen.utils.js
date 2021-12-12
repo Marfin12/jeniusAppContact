@@ -19,7 +19,7 @@ const _renderAlertDialog = (message, isNavigation, navigation) =>
     _isSuccessResponse(message) ? "Success" : "Error",
     message,
     [
-      { text: "OK", onPress: () => _navigateToContactScreen(isNavigation, navigation) }
+      { text: "OK", onPress: _navigateToContactScreen(isNavigation, navigation) }
     ]
   );
 

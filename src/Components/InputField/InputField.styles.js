@@ -1,14 +1,13 @@
 const styles = {
   container: (darkTheme, darkMode, whiteMode) => ({
-    color: darkTheme ? darkMode : whiteMode,
-    marginTop: -22
+    color: darkTheme ? darkMode : whiteMode
   }),
   text: {
     fontSize: 20
   },
   input: {
     height: 40,
-    marginTop: 16,
+    marginTop: 26,
     marginLeft: -2,
     borderBottomWidth: 0.7
   },
