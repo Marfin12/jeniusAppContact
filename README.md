@@ -40,15 +40,25 @@ ifconfig
 
 # Implementation
   Front End
+  
     - Clean architecture
+    
     - Dark / light mode using reducer
+    
     - Tested by jest (snapshot & unit test)
+    
     - Fetch & retrieve using graphql from react-apollo
+    
     - Implement micro front end (library name = "micro-card-marfin")
+    
   Back End
+  
     - Clean Architecture
+    
     - Tested by jest & chai
+    
     - Implement graphql schema
+    
     - Using node js
 
 # Screenshots or GIFS
