@@ -10,11 +10,13 @@ import thunk from 'redux-thunk';
 import { Main, reducers } from './src';
 
 const client = new ApolloClient({
-  uri: 'http://192.168.8.114:4000/graphql',
+  uri: 'http://YOUR_URL/graphql', // read setup instruction to get ip from ifconfig
 });
 
 /* eslint-disable no-console */
 console.warn = () => {}; // for development purpose
+
+console.disableYellowBox = true
 
 const App = () => {
   const middlewares = applyMiddleware(thunk);
