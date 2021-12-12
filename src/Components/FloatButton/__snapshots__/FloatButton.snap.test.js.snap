@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+<Card
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#333333",
+        "borderRadius": 30,
+        "height": 60,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": 10,
+        "top": 550,
+        "width": 60,
+      },
+      Object {},
+    ]
+  }
+/>
+`;
+
+exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+<Card
+  onPress={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#333333",
+        "borderRadius": 30,
+        "height": 60,
+        "justifyContent": "center",
+        "position": "absolute",
+        "right": 10,
+        "top": 550,
+        "width": 60,
+      },
+      Object {},
+    ]
+  }
+/>
+`;

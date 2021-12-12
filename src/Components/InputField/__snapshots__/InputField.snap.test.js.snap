@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+<View
+  style={Object {}}
+>
+  <TextField
+    numberOfLines={0}
+    style={
+      Array [
+        Object {
+          "color": "#FFF",
+        },
+      ]
+    }
+    textStyle={
+      Object {
+        "fontSize": 20,
+      }
+    }
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "borderBottomWidth": 0.7,
+        "height": 40,
+        "marginLeft": -2,
+        "marginTop": 26,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;
+
+exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+<View
+  style={Object {}}
+>
+  <TextField
+    numberOfLines={0}
+    style={
+      Array [
+        Object {
+          "color": "#111",
+        },
+      ]
+    }
+    textStyle={
+      Object {
+        "fontSize": 20,
+      }
+    }
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "borderBottomWidth": 0.7,
+        "height": 40,
+        "marginLeft": -2,
+        "marginTop": 26,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;

@@ -1,31 +1,31 @@
 const styles = {
-  container: {
-    width: 80,
-    height: 80,
-    borderRadius: 40,
+  textContainer: (size) => ({
+    width: size,
+    height: size,
+    borderRadius: size / 2,
     justifyContent: 'center',
     overflow: 'hidden',
     backgroundColor: '#f31222'
-  },
-  text: {
+  }),
+  text: (size) => ({
     color: '#ffffff',
     fontFamily: 'Inter-Medium',
-    fontSize: 14,
+    fontSize: size / 2,
     textAlign: 'center',
     letterSpacing: 0
-  },
-  imageContainer: {
+  }),
+  imageContainer: (size) => ({
     marginLeft: 8,
-    height: 80,
-    width: 80,
-    borderRadius: 40,
+    height: size,
+    width: size,
+    borderRadius: size / 2,
     overflow: 'hidden'
-  },
-  image: {
-    height: 80,
-    width: 80,
-    borderRadius: 40,
-  },
+  }),
+  image: (size) => ({
+    height: size,
+    width: size,
+    borderRadius: size / 2,
+  }),
 };
 
 export default styles;

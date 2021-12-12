@@ -2,14 +2,18 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ApolloProvider } from 'react-apollo';
 
+import { apolloObjectCreator, apolloMapCreator } from '../UtilsTest';
 import HomeScreen from './HomeScreen';
-import { apolloObjectCreator, apolloMapCreator } from './HomeScreen.utils';
 
 jest.mock('../../Components/TextField', () => 'TextField');
 jest.mock('../../Components/Card', () => 'Card');
-jest.mock('../../Components/HeaderList', () => 'Card');
+jest.mock('../../Components/FloatButton', () => 'FloatButton');
+jest.mock('../../Components/Loading', () => 'Loading');
+jest.mock('../../Components/HeaderList', () => 'HeaderList');
 
-const navigation = jest.fn();
+const navigation = {
+  addListener: jest.fn()
+};
 const client = {
   watchQuery: jest.fn(),
   refetch: false,
@@ -108,14 +112,14 @@ describe('Home Screen Component with failed to fetch', () => {
   });
 
   beforeEach(() => {
-    const sports = [];
+    const getListContact = [];
 
     client.watchQuery = jest.fn(() => ({
-      variables: sports,
+      variables: getListContact,
       ...mockedApolloConfig,
       currentResult: jest.fn().mockImplementation(() => ({
         ...mockedApolloConfig.currentResult,
-        data: apolloObjectCreator(sports),
+        data: apolloObjectCreator(getListContact),
       })),
     }));
   });
@@ -156,20 +160,21 @@ describe('Home Screen Component with successfully fetch', () => {
   });
 
   beforeEach(() => {
-    const sports = [
+    const getListContact = [
       {
-        name: 'Sport Example',
-        image: 'Some Image',
-        description: 'This is sport description...',
-      },
+        firstName: 'Marfin',
+        lastName: 'Fadhilah',
+        age: 12,
+        photo: 'example'
+      }
     ];
 
     client.watchQuery = jest.fn(() => ({
-      variables: sports,
+      variables: getListContact,
       ...mockedApolloConfig,
       currentResult: jest.fn().mockImplementation(() => ({
         ...mockedApolloConfig.currentResult,
-        data: apolloObjectCreator(sports),
+        data: apolloObjectCreator(getListContact),
       })),
     }));
   });

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useColorScheme } from 'react-native';
+import { useColorScheme, View } from 'react-native';
 import { useDispatch } from 'react-redux';
 import {
   NavigationContainer,
@@ -13,6 +13,7 @@ import HeaderImage from './Components/HeaderImage';
 import * as themeActions from './Redux/Actions/action';
 import Constants from './Constants';
 import { HomeScreen, InputScreen, ProfileScreen } from './Pages';
+import styles from './Main.styles'; 
 
 // import header image component
 
@@ -24,7 +25,8 @@ const {
 const navigateToInputScreen = (props) => () => {
   props.navigation.navigate(EDIT.ROUTE_NAME, {
     props,
-    isEdit: true
+    isEdit: true,
+    name: EDIT.TITLE
   });
 };
 
@@ -41,13 +43,11 @@ const StackScreen = () => (
       name={PROFILE.ROUTE_NAME}
       component={ProfileScreen}
       options={({ route }) => {
-        const { props } = route.params;
         return ({ 
           title: PROFILE.TITLE,
-          headerRight: (
-            <View>
-              <HeaderImage {...props} image={Images.delete_icon} onPress={props.deleteContact} />
-              <HeaderImage {...props} image={Images.edit_icon} onPress={navigateToInputScreen} />
+          headerRight: () => (
+            <View style={styles.headerIcon}>
+              <HeaderImage {...route.params} image={Images.edit_icon} onPress={navigateToInputScreen} />
             </View>
           )
         })}}
@@ -56,7 +56,7 @@ const StackScreen = () => (
       name={EDIT.ROUTE_NAME}
       component={InputScreen}
       options={({ route }) => ({ 
-        title: route.params.props.name
+        title: route.params.name
       })}
     />
   </Stack.Navigator>

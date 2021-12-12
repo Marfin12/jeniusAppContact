@@ -1,14 +1,11 @@
-import Constants from '../../Constants';
-
 const defaultProps = {
-  headerList: Constants.UTILS.EMPTY_FUNCTION,
-  isFetchingFirst: true,
-  emptyList: Constants.UTILS.EMPTY_FUNCTION,
-  color: 'black',
-  style: {},
+  firstName: '',
+  lastName: '',
+  size: '',
+  image: ''
 };
 
-const displayName = 'ListView';
+const displayName = 'AvatarImage';
 
 export default {
   defaultProps,

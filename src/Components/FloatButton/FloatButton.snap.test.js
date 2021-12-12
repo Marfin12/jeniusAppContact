@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import InputField from './InputField.component';
-import config from './InputField.config';
+import FloatButton from './FloatButton.component';
+import config from './FloatButton.config';
 
 jest.mock('react-redux', () => {
   const ActualReactRedux = jest.requireActual('react-redux');
@@ -21,27 +21,31 @@ jest.mock('react-redux', () => {
   };
 });
 jest.mock('../../Components/TextField', () => 'TextField');
+jest.mock('../../Components/Card', () => 'Card');
+jest.mock('../../Assets/Images', () => 'Images');
 
 afterEach(() => {
   jest.resetAllMocks();
 });
 
-describe('Header List Component Default Theme', () => {
+describe('Float button Component Default Theme', () => {
   const ComponentWrapper = renderer
-    .create(<InputField {...config.defaultProps} />)
+    .create(<FloatButton {...config.defaultProps} />)
     .toJSON();
+  
+  console.log(ComponentWrapper)
 
-  test('renders header list component light mode', () => {
+  test('renders float button component light mode', () => {
     expect(ComponentWrapper).toMatchSnapshot();
   });
 });
 
-describe('Header List Component Dark Theme', () => {
+describe('float button Component Dark Theme', () => {
   const ComponentWrapper = renderer
-    .create(<InputField {...config.defaultProps} />)
+    .create(<FloatButton {...config.defaultProps} />)
     .toJSON();
 
-  test('renders header list component dark mode', () => {
+  test('renders float button component dark mode', () => {
     expect(ComponentWrapper).toMatchSnapshot();
   });
 });

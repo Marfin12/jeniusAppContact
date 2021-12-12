@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Image } from 'react-native';
 import { useSelector } from 'react-redux';
 
 import styles from './HeaderImage.styles';
@@ -8,7 +8,7 @@ import config from './HeaderImage.config';
 const HeaderImage = (props) => {
   const getSelect = useSelector(({ themeReducer }) => themeReducer);
   const { theme } = getSelect;
-  const { onPress, image } = props;
+  const { onPress, image, style } = props;
 
   return (
     <TouchableOpacity

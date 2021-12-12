@@ -1,44 +1,22 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { graphql, compose } from 'react-apollo';
-import { get } from 'lodash';
 
-import { PostContact, EditContact, GetContact } from '../../Graphql/contact.graphql';
+import { PostContact, EditContact } from '../../Graphql/contact.graphql';
 import InputField from '../../Components/InputField';
 import TextField from '../../Components/TextField';
 import Card from '../../Components/Card';
 
-import styles from './InputField.styles';
-
-export const queryOptions = (props) => ({
-  fetchPolicy: 'network-only',
-  notifyOnNetworkStatusChange: true,
-  variables: {
-    id: get(props, 'navigation.state.params.props.data', ''),
-  }
-});
-
-export const mapPostMutationToProps = ({ mutate }) => ({
-  postContact: (firstName, lastName, age, photo) =>
-    mutate({ variables: { input: { firstName, lastName, age, photo } } })
-});
-
-export const mapEditMutationToProps = ({ mutate }) => ({
-  editContact: (firstName, lastName, age, photo) =>
-    mutate({ variables: { input: { firstName, lastName, age, photo } } })
-});
-
-const _mutateContact = (contact, isEdit) => {
-  const {firstName, lastName, age, photo} = contact;
-
-  if (isEdit) editContact(firstName, lastName, age, photo);
-  else postContact(firstName, lastName, age, photo);
-};
+import styles from './InputScreen.styles';
+import config from './InputScreen.config';
+import Loading from '../../Components/Loading';
+import { mutateContact } from './InputScreen.utils';
 
 const InputScreen = (props) => {
-  const { isEdit, data } = props.navigation.state.params;
-  const { firstName, lastName, age, photo } = data;
+  const { isEdit, props: { item } } = props.route.params;
+  const { firstName, lastName, age, photo, id } = item ? item : config.defaultItem;
 
+  const [isLoading, setIsLoading] = React.useState(false);
   const [firstNameText, setFirstName] = React.useState(firstName);
   const [lastNameText, setLastName] = React.useState(lastName);
   const [ageText, setAge] = React.useState(age);
@@ -47,40 +25,52 @@ const InputScreen = (props) => {
 
   React.useEffect(() => {
     setContact({
-      firstName,
-      lastName,
-      age,
-      photo
+      firstNameText,
+      lastNameText,
+      ageText,
+      photoText,
+      id,
+      setIsLoading
     })
-  }, [firstName, lastName, age, photo])
+  }, [firstNameText, lastNameText, ageText, photoText, id])
 
   return (
     <View style={styles.container}>
-      <InputField setText={setFirstName}>
-        {firstNameText}
-      </InputField>
-      <InputField setText={setLastName}>
-        {lastNameText}
-      </InputField>
-      <InputField setText={setAge}>
-        {ageText}
-       </InputField>
-       <InputField setText={setPhoto}>
-        {photoText}
-       </InputField>
-       <Card style={styles.button} onPress={_mutateContact(contact, isEdit)}>
-        <TextField textStyle={styles.buttonTitle}>
-          {isEdit ? 'Upadate' : 'Save'}
-        </TextField>
-      </Card>
+      <Loading isVisible={isLoading} />
+      <View style={styles.formInput}>
+        <InputField style={styles.textTitle} text={firstNameText} setText={setFirstName}>
+          First Name:
+        </InputField>
+        <InputField style={styles.textTitle} text={lastNameText} setText={setLastName}>
+          Last Name:
+        </InputField>
+        <InputField style={styles.textTitle} text={ageText} setText={setAge}>
+          Age:
+        </InputField>
+        <InputField style={styles.textTitle} text={photoText} setText={setPhoto}>
+          Photo:
+        </InputField>
+        <Card style={styles.button} onPress={() => mutateContact(contact, isEdit, props)}>
+          <TextField textStyle={styles.buttonTitle}>
+            {isEdit ? 'Upadate' : 'Save'}
+          </TextField>
+        </Card>
+      </View>
     </View>
   );
 };
 
+export const mapPostMutationToProps = ({ mutate }) => ({
+  postContact: (firstName, lastName, age, photo) =>
+    mutate({ variables: { input: { firstName, lastName, age, photo } } })
+});
+
+export const mapEditMutationToProps = ({ mutate }) => ({
+  editContact: (firstName, lastName, age, photo, id) =>
+    mutate({ variables: { input: { firstName, lastName, age, photo, id } } })
+});
+
 export default compose(
-  graphql(GetContact, {
-    options: queryOptions
-  }),
   graphql(PostContact, {
     props: mapPostMutationToProps
   }),

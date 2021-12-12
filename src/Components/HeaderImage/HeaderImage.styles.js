@@ -6,8 +6,8 @@ const styles = {
     borderBottomWidth: 3,
   }),
   image: {
-    width: 50,
-    height: 50
+    width: 36,
+    height: 36
   }
 };
 

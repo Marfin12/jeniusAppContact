@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderBottomWidth": 3,
+      "borderColor": "#222",
+      "opacity": 1,
+    }
+  }
+>
+  <Image
+    source=""
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderBottomWidth": 3,
+      "borderColor": "#EEE",
+      "opacity": 1,
+    }
+  }
+>
+  <Image
+    source=""
+    style={
+      Object {
+        "height": 36,
+        "width": 36,
+      }
+    }
+  />
+</View>
+`;

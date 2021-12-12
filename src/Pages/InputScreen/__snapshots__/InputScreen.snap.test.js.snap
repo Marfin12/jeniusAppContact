@@ -1,0 +1,679 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen Component with failed to fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;
+
+exports[`Home Screen Component with failed to fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;
+
+exports[`Home Screen Component with loading renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;
+
+exports[`Home Screen Component with loading renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={false}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 70,
+      }
+    }
+  >
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      First Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Last Name:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Age:
+    </InputField>
+    <InputField
+      setText={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "marginLeft": 12,
+          "paddingBottom": 100,
+        }
+      }
+      text=""
+    >
+      Photo:
+    </InputField>
+    <Card
+      onPress={[Function]}
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "black",
+          "borderRadius": 4,
+          "flex": 0,
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "paddingHorizontal": 32,
+          "paddingVertical": 12,
+          "shadowColor": "#ffd200",
+          "shadowOpacity": 0.8,
+        }
+      }
+    >
+      <TextField
+        textStyle={
+          Object {
+            "color": "white",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 21,
+          }
+        }
+      >
+        Save
+      </TextField>
+    </Card>
+  </View>
+</View>
+`;

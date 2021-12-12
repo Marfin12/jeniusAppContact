@@ -1,0 +1,634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen Component with failed to fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#f31222",
+          "borderRadius": 120,
+          "height": 240,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Inter-Medium",
+            "fontSize": 120,
+            "letterSpacing": 0,
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;
+
+exports[`Home Screen Component with failed to fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 120,
+          "height": 240,
+          "marginLeft": 8,
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 120,
+            "height": 240,
+            "width": 240,
+          }
+        }
+      />
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;
+
+exports[`Home Screen Component with loading renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#f31222",
+          "borderRadius": 120,
+          "height": 240,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Inter-Medium",
+            "fontSize": 120,
+            "letterSpacing": 0,
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;
+
+exports[`Home Screen Component with loading renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 120,
+          "height": 240,
+          "marginLeft": 8,
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 120,
+            "height": 240,
+            "width": 240,
+          }
+        }
+      />
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders dark mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#f31222",
+          "borderRadius": 120,
+          "height": 240,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#ffffff",
+            "fontFamily": "Inter-Medium",
+            "fontSize": 120,
+            "letterSpacing": 0,
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;
+
+exports[`Home Screen Component with successfully fetch renders light mode home screen 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+      "marginLeft": 10,
+    }
+  }
+>
+  <Loading
+    isVisible={true}
+  />
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 120,
+          "height": 240,
+          "marginLeft": 8,
+          "overflow": "hidden",
+          "width": 240,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 120,
+            "height": 240,
+            "width": 240,
+          }
+        }
+      />
+    </View>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "color": "#888888",
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+    <TextField
+      style={
+        Object {
+          "marginTop": 16,
+        }
+      }
+      textStyle={
+        Object {
+          "fontSize": 16,
+          "textAlign": "center",
+        }
+      }
+    >
+      
+    </TextField>
+  </View>
+  <FloatButton
+    deleteButton={true}
+    onPress={[Function]}
+  />
+</View>
+`;

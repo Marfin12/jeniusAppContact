@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import HeaderList from './HeaderList.component';
-import config from './HeaderList.config';
+import HeaderImage from './HeaderImage.component';
+import config from './HeaderImage.config';
 
 jest.mock('react-redux', () => {
   const ActualReactRedux = jest.requireActual('react-redux');
@@ -20,7 +20,6 @@ jest.mock('react-redux', () => {
       .mockImplementationOnce(() => darkMode),
   };
 });
-jest.mock('../../Components/TextField', () => 'TextField');
 
 afterEach(() => {
   jest.resetAllMocks();
@@ -28,7 +27,7 @@ afterEach(() => {
 
 describe('Header List Component Default Theme', () => {
   const ComponentWrapper = renderer
-    .create(<HeaderList {...config.defaultProps} />)
+    .create(<HeaderImage {...config.defaultProps} />)
     .toJSON();
 
   test('renders header list component light mode', () => {
@@ -38,7 +37,7 @@ describe('Header List Component Default Theme', () => {
 
 describe('Header List Component Dark Theme', () => {
   const ComponentWrapper = renderer
-    .create(<HeaderList {...config.defaultProps} />)
+    .create(<HeaderImage {...config.defaultProps} />)
     .toJSON();
 
   test('renders header list component dark mode', () => {

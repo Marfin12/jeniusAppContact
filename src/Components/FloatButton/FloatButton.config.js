@@ -1,10 +1,11 @@
 const defaultProps = {
   style: {},
-  image: '',
+  addButton: false,
+  deleteButton: false,
   onPress: () => {}
 };
 
-const displayName = 'HeaderList';
+const displayName = 'FloatButton';
 
 export default {
   defaultProps,

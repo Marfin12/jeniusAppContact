@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "height": "",
+      "marginLeft": 8,
+      "overflow": "hidden",
+      "width": "",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 0,
+        "height": "",
+        "width": "",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Header List Component Default Theme renders header list component image url mode 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f31222",
+      "borderRadius": 0,
+      "height": "",
+      "justifyContent": "center",
+      "overflow": "hidden",
+      "width": "",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#ffffff",
+        "fontFamily": "Inter-Medium",
+        "fontSize": 0,
+        "letterSpacing": 0,
+        "textAlign": "center",
+      }
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 0,
+      "height": "",
+      "marginLeft": 8,
+      "overflow": "hidden",
+      "width": "",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 0,
+        "height": "",
+        "width": "",
+      }
+    }
+  />
+</View>
+`;

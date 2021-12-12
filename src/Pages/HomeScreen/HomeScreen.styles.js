@@ -1,6 +1,7 @@
 const styles = {
   title: {
     fontSize: 20,
+    marginTop: 5,
   },
   containerText: {
     flex: 1,
@@ -33,14 +34,8 @@ const styles = {
     elevation: 2,
     borderRadius: 5,
   },
-  floatButton: {
-    width: 60,  
-    height: 60,   
-    borderRadius: 30,            
+  floatButton: {      
     backgroundColor: '#ee6e73',                                    
-    position: 'absolute',                                          
-    bottom: 10,                                                    
-    right: 10, 
   }
 };
 

@@ -17,7 +17,8 @@ const InputField = (props) => {
     <View style={style}>
       <TextField
         numberOfLines={numberOfLines}
-        style={styles.text(theme, darkThemeColor, defaultThemeColor)}
+        style={[styles.container(theme, darkThemeColor, defaultThemeColor)]}
+        textStyle={styles.text}
       >
         {children}
       </TextField>

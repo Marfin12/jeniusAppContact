@@ -1,6 +1,6 @@
 const images = {
-    delete_icon: require('./Images/delete.png'),
-    edit_icon: require('./Images/edit.png'),
+    delete_icon: require('./Source/delete.png'),
+    edit_icon: require('./Source/edit.png'),
   };
   
   export default images;

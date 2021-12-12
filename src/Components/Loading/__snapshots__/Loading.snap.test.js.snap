@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dark Mode Text Field Component renders text field component with default props 1`] = `
+<Modal
+  animationType="none"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={false}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(4,0,0,0.8)",
+        "flex": 1,
+        "justifyContent": "center",
+        "zIndex": 1000,
+      }
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#000000"
+      hidesWhenStopped={true}
+      size="large"
+    />
+  </View>
+</Modal>
+`;
+
+exports[`Light Mode Text Field Component renders text field component with default props 1`] = `
+<Modal
+  animationType="none"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={false}
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(4,0,0,0.8)",
+        "flex": 1,
+        "justifyContent": "center",
+        "zIndex": 1000,
+      }
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#000000"
+      hidesWhenStopped={true}
+      size="large"
+    />
+  </View>
+</Modal>
+`;

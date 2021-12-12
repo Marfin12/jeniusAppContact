@@ -17,7 +17,11 @@ const Constants = {
     },
     EDIT: {
       ROUTE_NAME: 'EDIT_SCREEN',
-      TITLE: 'Edit Contact'
+      TITLE: 'Edit Contact',
+    },
+    SAVE: {
+      ROUTE_NAME: 'EDIT_SCREEN',
+      TITLE: 'Save Contact',
     }
   }
 };

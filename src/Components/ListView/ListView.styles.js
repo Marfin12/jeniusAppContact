@@ -1,6 +1,5 @@
 const styles = {
   container: {
-    flex: 1,
     justifyContent: 'center',
     marginHorizontal: 16,
   },

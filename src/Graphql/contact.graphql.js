@@ -1,8 +1,8 @@
 import { gql } from 'apollo-boost';
 
 const GetListContact = gql`
-  query getContactById {
-    contact {
+  query getListContact {
+    getListContact {
       firstName
       lastName
       age
@@ -14,7 +14,7 @@ const GetListContact = gql`
 
 const GetContact = gql`
   query getContactById($id: String!) {
-    contact(id: $id) {
+    getContactById(id: $id) {
       firstName
       lastName
       age
@@ -25,7 +25,7 @@ const GetContact = gql`
 `;
 
 const PostContact = gql`
-  mutation postContact($input: ContactType!) {
+  mutation postContact($input: ContactInput!) {
     postContact(input: $input) {
       message
     }
@@ -33,7 +33,7 @@ const PostContact = gql`
 `;
 
 const EditContact = gql`
-  mutation editContact($input: ContactType!) {
+  mutation editContact($input: ContactInput!) {
     editContact(input: $input) {
       message
     }
@@ -41,8 +41,8 @@ const EditContact = gql`
 `;
 
 const DeleteContact = gql`
-  mutation deleteContact($input: ContactType!) {
-    deleteContact(input: $input) {
+  mutation deleteContact($id: String) {
+    deleteContact(id: $id) {
       message
     }
   }

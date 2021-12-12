@@ -1,17 +1,18 @@
 const styles = {
   container: {
-    marginLeft: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginLeft: 10
   },
   button: {
-    alignItems: 'center',
+    alignSelf: 'center',
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 32,
     borderRadius: 4,
-    elevation: 3,
     backgroundColor: 'black',
+    flexDirection: 'column',
+    flex: 0,
+    shadowColor: '#ffd200',
+    shadowOpacity: 0.8
   },
   buttonTitle: {
     fontSize: 16,
@@ -19,7 +20,17 @@ const styles = {
     fontWeight: 'bold',
     letterSpacing: 0.25,
     color: 'white',
-  }
+  },
+  formInput: {
+    marginTop: 70,
+  },
+  textTitle: {
+    flex: 1,
+    flexDirection: 'column',
+    marginLeft: 12,
+    paddingBottom: 100,
+    justifyContent: 'center',
+  },
 };
 
 export default styles;
