@@ -1,5 +1,5 @@
 # Description
-  This project is an example of application created with react-native and node js
+  This project is jenius technical test front end developer made by react native. It works for android and iOS platform.
 
 # Setup Instructions 
   1. yarn / npm install
@@ -32,46 +32,29 @@ ifconfig
      `cd .. && yarn ios`   
 
 # Apps Description
-  Application that shows a list of sports and its description
+  Application that shows a list of contact. The detail of functionality of this apps explained below
+  - User can save contact by clicking add float iconic button and fill the required information in save contact screen
+  - User can see the profile detail by clicking one of the item list of contact
+  - User can delete contact in the profile detail by clicking remove float iconic button
+  - User can edit the contact by clicking pencil icon on top bar navigation and fill the required information in edit contact screen
 
 # Implementation
-  - Clean architecture
-  - Dark / light mode using reducer
-  - Tested by jest (snapshot & unit test)
-  ```diff
-  + Tested by mocha
-  + code style using linter
-  + Scrollable View
-  + Bottom-sheet navigation
-  ```
-  - Fetch using graphql from react-apollo
-
-# What's New
-  - Dark / Light mode enhanced
-  - Bottom-sheet navigation
-  - Stack Screen inside Bottom-Sheet navigation
-  - Server testing using mocha
-  - Favorite Screen
-  - Scrollable view on detail screen
-  - Clean Architecture on backend
-  - More linter rules
+  Front End
+    - Clean architecture
+    - Dark / light mode using reducer
+    - Tested by jest (snapshot & unit test)
+    - Fetch & retrieve using graphql from react-apollo
+    - Implement micro front end (library name = "micro-card-marfin")
+  Back End
+    - Clean Architecture
+    - Tested by jest & chai
+    - Implement graphql schema
+    - Using node js
 
 # Screenshots or GIFS
-  Dark Mode Example
-  
-  ![Dark-Mode](https://user-images.githubusercontent.com/33171451/132995667-10eccb10-a850-4676-aa11-a62114c442f4.gif)
-  
-  Light Mode Example
-  
-  ![Light-Mode](https://user-images.githubusercontent.com/33171451/132995631-2e56d149-7af0-4b88-bad6-26ec4e5a4e17.gif)
+  Android
+    ![android](https://user-images.githubusercontent.com/33171451/145721349-cacba423-0700-4cea-90dc-d0f72f69b418.gif)
 
-
-# Coverage
-  <img width="1439" alt="Screen Shot 2021-09-12 at 23 34 55" src="https://user-images.githubusercontent.com/33171451/132995524-35037cf3-1ab2-4d33-a647-b68e41774480.png">
-
-# lint
-  <img width="1440" alt="Screen Shot 2021-09-12 at 23 13 07" src="https://user-images.githubusercontent.com/33171451/132995475-79b0428b-76d3-4a32-b566-f2747028d41f.png">
-
-# Unit Test
-<img width="1440" alt="Screen Shot 2021-09-12 at 23 12 25" src="https://user-images.githubusercontent.com/33171451/132995466-e8a8f027-85af-465d-9ead-4342d9f7a0c9.png">
+  iOS
+    ![ios](https://user-images.githubusercontent.com/33171451/145721403-db92390c-848b-4ac0-9d5c-c8b8957a4b75.gif)
 
