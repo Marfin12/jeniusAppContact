@@ -55,10 +55,10 @@ ifconfig
   Android
 
 
-    ![android](https://user-images.githubusercontent.com/33171451/145721349-cacba423-0700-4cea-90dc-d0f72f69b418.gif)
+   ![android](https://user-images.githubusercontent.com/33171451/145721349-cacba423-0700-4cea-90dc-d0f72f69b418.gif)
 
   iOS
 
 
-    ![ios](https://user-images.githubusercontent.com/33171451/145721403-db92390c-848b-4ac0-9d5c-c8b8957a4b75.gif)
+   ![ios](https://user-images.githubusercontent.com/33171451/145721403-db92390c-848b-4ac0-9d5c-c8b8957a4b75.gif)
 
