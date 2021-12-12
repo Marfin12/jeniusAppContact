@@ -45,16 +45,12 @@ exports[`Home Screen Component with failed to fetch renders dark mode home scree
         }
       }
       data={Array []}
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -63,9 +59,7 @@ exports[`Home Screen Component with failed to fetch renders dark mode home scree
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <TextField
@@ -147,16 +141,12 @@ exports[`Home Screen Component with failed to fetch renders light mode home scre
         }
       }
       data={Array []}
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -165,9 +155,7 @@ exports[`Home Screen Component with failed to fetch renders light mode home scre
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <TextField
@@ -248,16 +236,12 @@ exports[`Home Screen Component with loading renders dark mode home screen 1`] = 
           "flexGrow": 1,
         }
       }
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -266,9 +250,7 @@ exports[`Home Screen Component with loading renders dark mode home screen 1`] = 
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <TextField
@@ -349,16 +331,12 @@ exports[`Home Screen Component with loading renders light mode home screen 1`] =
           "flexGrow": 1,
         }
       }
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -367,9 +345,7 @@ exports[`Home Screen Component with loading renders light mode home screen 1`] =
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <TextField
@@ -461,16 +437,12 @@ exports[`Home Screen Component with successfully fetch renders dark mode home sc
           },
         ]
       }
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -479,9 +451,7 @@ exports[`Home Screen Component with successfully fetch renders dark mode home sc
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <View
@@ -597,16 +567,12 @@ exports[`Home Screen Component with successfully fetch renders light mode home s
           },
         ]
       }
-      disableVirtualization={false}
       getItem={[Function]}
       getItemCount={[Function]}
-      horizontal={false}
-      initialNumToRender={10}
       keyExtractor={[Function]}
-      maxToRenderPerBatch={10}
       onContentSizeChange={[Function]}
-      onEndReachedThreshold={2}
       onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
       onMomentumScrollEnd={[Function]}
       onScroll={[Function]}
       onScrollBeginDrag={[Function]}
@@ -615,9 +581,7 @@ exports[`Home Screen Component with successfully fetch renders light mode home s
       renderItem={[Function]}
       scrollEventThrottle={50}
       stickyHeaderIndices={Array []}
-      updateCellsBatchingPeriod={50}
       viewabilityConfigCallbackPairs={Array []}
-      windowSize={21}
     >
       <View>
         <View

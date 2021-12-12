@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { graphql, compose } from 'react-apollo';
+import Card from 'micro-card-marfin';
 
 import { PostContact, EditContact } from '../../Graphql/contact.graphql';
 import InputField from '../../Components/InputField';
 import TextField from '../../Components/TextField';
-import Card from '../../Components/Card';
 
 import styles from './InputScreen.styles';
 import config from './InputScreen.config';

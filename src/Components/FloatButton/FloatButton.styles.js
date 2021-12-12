@@ -7,7 +7,7 @@ const styles = {
     borderRadius: 30,            
     backgroundColor: '#333333',                                    
     position: 'absolute',                                          
-    top: 550,                                                    
+    top: 650,                                                    
     right: 10, 
   },
   trashIcon: {

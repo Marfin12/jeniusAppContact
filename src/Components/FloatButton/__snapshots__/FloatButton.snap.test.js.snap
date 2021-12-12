@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+exports[`Float button Component Default Theme renders float button component light mode 1`] = `
 <Card
   onPress={[Function]}
   style={
@@ -13,7 +13,7 @@ exports[`Header List Component Dark Theme renders header list component dark mod
         "justifyContent": "center",
         "position": "absolute",
         "right": 10,
-        "top": 550,
+        "top": 650,
         "width": 60,
       },
       Object {},
@@ -22,7 +22,7 @@ exports[`Header List Component Dark Theme renders header list component dark mod
 />
 `;
 
-exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+exports[`float button Component Dark Theme renders float button component dark mode 1`] = `
 <Card
   onPress={[Function]}
   style={
@@ -35,7 +35,7 @@ exports[`Header List Component Default Theme renders header list component light
         "justifyContent": "center",
         "position": "absolute",
         "right": 10,
-        "top": 550,
+        "top": 650,
         "width": 60,
       },
       Object {},

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import HeaderList from './HeaderList.component';
+import HeaderImage from './HeaderImage.component';
 
 const mockStore = configureMockStore([thunk]);
 
@@ -16,7 +16,7 @@ describe('App', () => {
     const wrapper = renderer
       .create(
         <Provider store={store}>
-          <HeaderList />
+          <HeaderImage />
         </Provider>,
       )
       .toJSON();
@@ -32,7 +32,7 @@ describe('App', () => {
     const wrapper = renderer
       .create(
         <Provider store={store}>
-          <HeaderList />
+          <HeaderImage />
         </Provider>,
       )
       .toJSON();

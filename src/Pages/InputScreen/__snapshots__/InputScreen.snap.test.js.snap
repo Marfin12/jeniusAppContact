@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Screen Component with failed to fetch renders dark mode home screen 1`] = `
+exports[`Input Screen Component with loading renders dark mode input screen 1`] = `
 <View
   style={
     Object {
@@ -113,7 +113,7 @@ exports[`Home Screen Component with failed to fetch renders dark mode home scree
 </View>
 `;
 
-exports[`Home Screen Component with failed to fetch renders light mode home screen 1`] = `
+exports[`Input Screen Component with loading renders light mode input screen 1`] = `
 <View
   style={
     Object {
@@ -226,7 +226,7 @@ exports[`Home Screen Component with failed to fetch renders light mode home scre
 </View>
 `;
 
-exports[`Home Screen Component with loading renders dark mode home screen 1`] = `
+exports[`input Screen Component with failed to fetch renders dark mode input screen 1`] = `
 <View
   style={
     Object {
@@ -339,7 +339,7 @@ exports[`Home Screen Component with loading renders dark mode home screen 1`] = 
 </View>
 `;
 
-exports[`Home Screen Component with loading renders light mode home screen 1`] = `
+exports[`input Screen Component with failed to fetch renders light mode input screen 1`] = `
 <View
   style={
     Object {
@@ -452,7 +452,7 @@ exports[`Home Screen Component with loading renders light mode home screen 1`] =
 </View>
 `;
 
-exports[`Home Screen Component with successfully fetch renders dark mode home screen 1`] = `
+exports[`input Screen Component with successfully fetch renders dark mode input screen 1`] = `
 <View
   style={
     Object {
@@ -565,7 +565,7 @@ exports[`Home Screen Component with successfully fetch renders dark mode home sc
 </View>
 `;
 
-exports[`Home Screen Component with successfully fetch renders light mode home screen 1`] = `
+exports[`input Screen Component with successfully fetch renders light mode input screen 1`] = `
 <View
   style={
     Object {

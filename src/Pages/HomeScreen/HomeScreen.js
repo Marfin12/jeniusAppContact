@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { graphql, compose } from 'react-apollo';
+import Card from 'micro-card-marfin';
 
 import { GetListContact } from '../../Graphql/contact.graphql';
-import Card from '../../Components/Card';
 import FloatButton from '../../Components/FloatButton';
 import ListView from '../../Components/ListView';
 import TextField from '../../Components/TextField';

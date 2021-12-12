@@ -10,6 +10,7 @@ exports[`Header List Component Dark Theme renders header list component dark mod
       Array [
         Object {
           "color": "#FFF",
+          "marginTop": -22,
         },
       ]
     }
@@ -20,18 +21,15 @@ exports[`Header List Component Dark Theme renders header list component dark mod
     }
   />
   <TextInput
-    allowFontScaling={true}
     onChangeText={[Function]}
-    rejectResponderTermination={true}
     style={
       Object {
         "borderBottomWidth": 0.7,
         "height": 40,
         "marginLeft": -2,
-        "marginTop": 26,
+        "marginTop": 16,
       }
     }
-    underlineColorAndroid="transparent"
   />
 </View>
 `;
@@ -46,6 +44,7 @@ exports[`Header List Component Default Theme renders header list component light
       Array [
         Object {
           "color": "#111",
+          "marginTop": -22,
         },
       ]
     }
@@ -56,18 +55,15 @@ exports[`Header List Component Default Theme renders header list component light
     }
   />
   <TextInput
-    allowFontScaling={true}
     onChangeText={[Function]}
-    rejectResponderTermination={true}
     style={
       Object {
         "borderBottomWidth": 0.7,
         "height": 40,
         "marginLeft": -2,
-        "marginTop": 26,
+        "marginTop": 16,
       }
     }
-    underlineColorAndroid="transparent"
   />
 </View>
 `;

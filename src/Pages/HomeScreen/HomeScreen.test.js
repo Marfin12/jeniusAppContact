@@ -1,4 +1,5 @@
 import { renderItem } from './HomeScreen';
+import { navigateToProfileScreen } from './HomeScreen.utils';
 
 jest.mock('../../Components/TextField', () => 'TextField');
 jest.mock('../../Components/Card', () => 'Card');
@@ -14,14 +15,7 @@ it('should navigate to card detail when card item pressed', () => {
   };
 
   const cardItem = renderItem(mockedProps, navigation);
-  cardItem.props.onPress();
+  cardItem.props.children[1].props.onPress();
 
-  const expectedRoute = 'Details';
-  const expectedProps = {
-    props: mockedProps,
-  };
-  expect(navigation.navigate).toHaveBeenCalledWith(
-    expectedRoute,
-    expectedProps,
-  );
+  expect(navigation.navigate).toHaveBeenCalled();
 });

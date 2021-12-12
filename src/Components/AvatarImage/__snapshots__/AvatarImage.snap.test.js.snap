@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
+exports[`Avatar Component Dark Theme renders avatar component dark mode 1`] = `
 <View
   accessible={true}
   focusable={false}
@@ -38,7 +38,7 @@ exports[`Header List Component Dark Theme renders header list component dark mod
 </View>
 `;
 
-exports[`Header List Component Default Theme renders header list component image url mode 1`] = `
+exports[`Avatar Component Default Theme renders avatar component image url mode 1`] = `
 <View
   style={
     Object {
@@ -55,7 +55,6 @@ exports[`Header List Component Default Theme renders header list component image
     style={
       Object {
         "color": "#ffffff",
-        "fontFamily": "Inter-Medium",
         "fontSize": 0,
         "letterSpacing": 0,
         "textAlign": "center",
@@ -67,7 +66,7 @@ exports[`Header List Component Default Theme renders header list component image
 </View>
 `;
 
-exports[`Header List Component Default Theme renders header list component light mode 1`] = `
+exports[`Avatar Component Default Theme renders avatar component light mode 1`] = `
 <View
   accessible={true}
   focusable={false}

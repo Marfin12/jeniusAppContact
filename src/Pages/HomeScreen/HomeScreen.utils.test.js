@@ -1,49 +1,42 @@
 import {
-  navigateToDetailScreen,
-  apolloMapCreator,
-  apolloObjectCreator,
+  navigateToInputScreen,
+  navigateToProfileScreen
 } from './HomeScreen.utils';
 
 const mockedProps = {
   name: 'Sport example',
   photo: 'some image',
   description: 'This is good sport',
+  navigation: {
+    navigate: jest.fn()
+  }
 };
 
-it('should navigate to card detail screen', () => {
-  const navigation = {
-    navigate: jest.fn(),
-  };
-
-  const expectedRoute = 'Details';
+it('should navigate to input screen', () => {
+  const expectedRoute = 'EDIT_SCREEN';
   const expectedProps = {
     props: mockedProps,
+    isEdit: false,
+    name: 'Save Contact'
   };
 
-  navigateToDetailScreen(navigation, mockedProps)();
-  expect(navigation.navigate).toHaveBeenCalledWith(
+  navigateToInputScreen(mockedProps)();
+  expect(mockedProps.navigation.navigate).toHaveBeenCalledWith(
     expectedRoute,
-    expectedProps,
+    expectedProps
   );
 });
 
-it('should generate mapper object with having queryId key', () => {
-  const mapperApollo = apolloMapCreator();
-
-  const expectedMapperApollo = new Map();
-  expectedMapperApollo.set({
-    queryId: 123,
-  });
-
-  expect(mapperApollo).toEqual(expectedMapperApollo);
-});
-
-it('should generate object with the defined length & its object content', () => {
-  const apolloObject = apolloObjectCreator([mockedProps]);
-  const expectedApolloObject = {
-    length: 1,
-    sports: [mockedProps],
+it('should navigate to profile screen', () => {
+  const expectedRoute = 'PROFILE_SCREEN';
+  const expectedProps = {
+    item: {},
+    navigation: mockedProps.navigation
   };
 
-  expect(apolloObject).toEqual(expectedApolloObject);
+  navigateToProfileScreen(expectedProps.item, mockedProps.navigation)();
+  expect(mockedProps.navigation.navigate).toHaveBeenCalledWith(
+    expectedRoute,
+    expectedProps
+  );
 });

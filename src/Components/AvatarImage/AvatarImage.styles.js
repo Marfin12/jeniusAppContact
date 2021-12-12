@@ -9,7 +9,6 @@ const styles = {
   }),
   text: (size) => ({
     color: '#ffffff',
-    fontFamily: 'Inter-Medium',
     fontSize: size / 2,
     textAlign: 'center',
     letterSpacing: 0

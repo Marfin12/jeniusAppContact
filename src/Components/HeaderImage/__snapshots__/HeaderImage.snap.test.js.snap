@@ -3,7 +3,9 @@
 exports[`Header List Component Dark Theme renders header list component dark mode 1`] = `
 <View
   accessible={true}
+  collapsable={false}
   focusable={false}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -34,7 +36,9 @@ exports[`Header List Component Dark Theme renders header list component dark mod
 exports[`Header List Component Default Theme renders header list component light mode 1`] = `
 <View
   accessible={true}
+  collapsable={false}
   focusable={false}
+  nativeID="animatedComponent"
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Image } from 'react-native';
+import Card from 'micro-card-marfin';
 
 import { Images } from '../../Assets/Images';
 import TextField from '../TextField';
-import Card from '../Card';
 
 import styles from './FloatButton.styles';
 import config from './FloatButton.config';

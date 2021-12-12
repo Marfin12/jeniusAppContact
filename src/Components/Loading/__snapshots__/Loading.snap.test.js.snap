@@ -18,9 +18,7 @@ exports[`Dark Mode Text Field Component renders text field component with defaul
     }
   >
     <ActivityIndicator
-      animating={true}
       color="#000000"
-      hidesWhenStopped={true}
       size="large"
     />
   </View>
@@ -45,9 +43,7 @@ exports[`Light Mode Text Field Component renders text field component with defau
     }
   >
     <ActivityIndicator
-      animating={true}
       color="#000000"
-      hidesWhenStopped={true}
       size="large"
     />
   </View>
