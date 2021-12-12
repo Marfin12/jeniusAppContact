@@ -2,8 +2,10 @@ const {
   GraphQLList,
   GraphQLObjectType,
   GraphQLSchema,
+  GraphQLNonNull,
   GraphQLString,
   GraphQLInt,
+  GraphQLInputObjectType
 } = require('graphql');
 
 const {
@@ -13,6 +15,17 @@ const {
   fetchContactById,
   fetchContactByAll
 } = require('../services');
+
+const ContactInputType = new GraphQLInputObjectType({
+  name: 'ContactInput',
+  fields: () => ({
+    firstName: { type: GraphQLString },
+    lastName: { type: GraphQLString },
+    age: { type: GraphQLString },
+    photo: { type: GraphQLString},
+    id: { type: GraphQLString },
+  }),
+});
 
 const ContactType = new GraphQLObjectType({
   name: 'Contact',
@@ -33,6 +46,10 @@ const ContactType = new GraphQLObjectType({
     photo: {
       type: GraphQLString,
       resolve: (data) => data.photo,
+    },
+    id: {
+      type: GraphQLString,
+      resolve: (data) => data.id,
     },
   }),
 });
@@ -80,10 +97,7 @@ const Mutation = new GraphQLObjectType({
     postContact: {
       type: ResponseType,
       args: {
-        firstName: { type: GraphQLString },
-        lastName: { type: GraphQLString },
-        age: { type: GraphQLInt },
-        photo: { type: GraphQLString },
+        input: { type: ContactInputType }
       },
       resolve(parent, args) {
         return postContact(args);
@@ -92,11 +106,7 @@ const Mutation = new GraphQLObjectType({
     editContact: {
       type: ResponseType,
       args: {
-        firstName: { type: GraphQLString },
-        lastName: { type: GraphQLString },
-        age: { type: GraphQLInt },
-        photo: { type: GraphQLString },
-        id: { type: GraphQLString }
+        input: { type: ContactInputType }
       },
       resolve(parent, args) {
         return editContact(args);

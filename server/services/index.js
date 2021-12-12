@@ -20,26 +20,27 @@ const fetchContactById = async (args) => {
 const postContact = async (args) => await fetch(encodeURI(`${BASE_URL}${CONTACT_PAGES.ALL}`), {
   method: 'POST',
   body: JSON.stringify({
-    firstName: args.firstName,
-    lastName: args.lastName,
-    age: args.age,
-    photo: args.photo,
+    firstName: args.input.firstName,
+    lastName: args.input.lastName,
+    age: parseInt(args.input.age),
+    photo: args.input.photo,
   }),
 });
 
-const editContact = async (args) => await fetch(encodeURI(`${BASE_URL}${CONTACT_PAGES.ID}${args.id}`), {
+const editContact = async (args) => await fetch(encodeURI(`${BASE_URL}${CONTACT_PAGES.ID}${args.input.id}`), {
   method: 'PUT',
   body: JSON.stringify({
-    firstName: args.firstName,
-    lastName: args.lastName,
-    age: args.age,
-    photo: args.photo,
+    firstName: args.input.firstName,
+    lastName: args.input.lastName,
+    age: parseInt(args.input.age),
+    photo: args.input.photo,
   }),
 });
 
-const deleteContact = async (args) => await fetch(encodeURI(`${BASE_URL}${CONTACT_PAGES.ID}${args.id}`), {
+const deleteContact = async (args) => {
+  return await fetch(encodeURI(`${BASE_URL}${CONTACT_PAGES.ID}${args.id}`), {
   method: 'DELETE'
-});
+})};
 
 module.exports = {
   fetchContactByAll,
