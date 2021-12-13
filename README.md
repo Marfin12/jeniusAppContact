@@ -49,7 +49,7 @@ ifconfig
     
     - Fetch & retrieve using graphql from react-apollo
     
-    - Implement micro front end (library name = "micro-card-marfin")
+    - Implement micro front end https://github.com/Marfin12/micro-card-marfin
     
   Back End
   
